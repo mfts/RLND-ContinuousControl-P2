@@ -85,14 +85,17 @@ The agents are trained with the previously described DDPG over 500 episodes with
 Below you can see snippet randomly selected actions (**untrained** agent):
 
 ![untrained][image2]
+
 *The agents are not able to "grab" a ball and moving frantically caused by taking actions at random.*
 
 Compared with a **trained** agent: 
 
 ![trained][image3]
+
 *The agents maintain their hands' position on the target position (circulating balls).*
 
 ![scores][image4]
+
 *The distribution shows the rewards per episode for each agents (in color) and averaged (in black) for all agents.*
 
 The environment has its natural limitation: every agent perfectly maintaining their hand on the moving target infinitely long. Hence, there are diminishing returns from training more episodes. The currently trained algorithm tops out at an average reward of +39 over 100 episodes (with 1000 time steps each).
