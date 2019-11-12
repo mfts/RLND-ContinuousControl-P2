@@ -14,7 +14,7 @@ The goal of the project is to train a group of 20 identical agents to maintain t
 The environment in which the agent can act is large (`n=33`) and contains rotation, position, velocity and angular velocities of the arm. The agent may can move its arm, which has two joints by changing any of the 4 actions, which correspond to the torque on each joint. Each action is a continuous variable and can vary from -1 to 1. 
 Therefore, we can use neither a traditional Q-Table approach (due to high-dimensional observation spaces) nor a Deep Q-Network [DQN] approach, which can solve high-dimensional observation spaces but only discrete, low-dimensional action spaces. In order to get around this barrier, we resort to a model-free, off-policy actor-critic algorithm that uses function approximation to learn policies in high-dimensional, continuous action spaces. This algorithm is call deep deterministic policy gradient [DDPG] algorithm.
 
-The agents are trained successfully to earn an average cumulative reward of +30 over 100 episodes after 27 episodes. In the next section, I will explain the learning algorithm used.
+The agents are trained successfully to earn an average cumulative reward of +30 over 100 episodes after 36 episodes. In the next section, I will explain the learning algorithm used.
 
 ## Learning Algorithm
 The DDPG algorithm used in the project consists of an **actor-critic network** combined with two familiar features from DQN: **experienced replay** and **gradual Q-target updates**.
